@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <h2>Creación de cuenta</h2>
+
+    <form action="" method="post">
+        <p>Escriba su correo: <input type="email" name="correo" required></p>
+        Escriba su contraseña: <input type="password" name="contra" onfocus="avisoPass()" onblur="validaPass()" id="contra">
+        <div background="blue" id="div1">&nbsp;</div>
+        Repita su contraseña: <input type="password" name="contra1" onblur="comparaPass()" id="contra1">
+        <div id="div2">&nbsp;</div>
+        <input type="button" value="Enviar" id="enviar">
+    </form>
+
+    <script>
+        var passOK;
+        function avisoPass(){
+            document.getElementById("div1").innerHTML = "Aviso: La contraseña debe tener al menos 8 caracteres";
+        }
+        function validaPass(){
+            if(document.getElementById("contra").value.length >= 8){
+                document.getElementById("div1").innerHTML = "Contraseña aceptable";
+                document.getElementById("enviar").disabled = false;
+                document.getElementById("enviar").title = "";
+                passOK = true;
+            }
+            else{
+                document.getElementById("div1").innerHTML = "Contraseña demasiado corta. Favor de corregir";
+                document.getElementById("enviar").disabled = true;
+                document.getElementById("enviar").title = "Corrija su contraseña";
+                passOK = false;
+            }
+        }
+        function comparaPass(){
+            if(document.getElementById("contra1").value == document.getElementById("contra").value){
+                document.getElementById("enviar").title = "";
+                if(passOK){
+                    document.getElementById("enviar").disabled = false;
+                    document.getElementById("div2").innerHTML = "Las contraseñas coinciden";
+                }
+            }
+            else{
+                document.getElementById("div2").innerHTML = "Las contraseñas no coinciden";
+                document.getElementById("enviar").disabled = true;
+                document.getElementById("enviar").title = "Corrija su contraseña";
+            }
+
+
+        }
+    </script>
+
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+
+</body>
+</html>

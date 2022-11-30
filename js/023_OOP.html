@@ -1,0 +1,82 @@
+<!--
+    El lenguaje JavaScript no es un lenguaje orientado a objetos completo, pero permite definir clases con sus atributos y responsabilidades.
+    Luego nos permite definir objetos de estas clases. Pero el otro pilar de la programación orientada a objetos, es decir la herencia, recién se incorporó en las últimas versiones (lo veremos más adelante). Veremos la sintaxis para la declaración de una clase y la posterior definición de objetos de la misma.
+
+    A lo largo de la historia de JavaScript han aparecido varias formas de plantear las clases, más adelante veremos la última sintaxis propuesta utilizando directamente la palabra clave class para declarar una clase.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <h1>Cajero Automático</h1>
+    <form action="#" method ="post">
+        <div style="margin: 3em;">
+            <div>Nombre: <input type="text" name="nombre" id="nombre"></div>
+            <div>Saldo: <input type="number" name="saldo" id="saldo"></div>
+            <div><input type="button" value="Guardar" onclick="
+                cliente1 = new Cliente(document.getElementById('nombre').value,document.getElementById('saldo').value); 
+                alert('Se creo exitosamente el cliente'); 
+                document.getElementById('nombre').disabled = true; 
+                document.getElementById('saldo').disabled = true;
+            "></div>
+        </div>
+        <div style="margin: 3em;">
+            <div>Cantidad: <input type="number" name="cantidad" id="cantidad"></div>
+
+            <div><input type="button" value="Retirar" onclick="
+                cliente1.retirar(document.getElementById('cantidad').value);
+                document.getElementById('saldo').value = cliente1.saldo;
+            " id="retirar"></div>
+
+            <div><input type="button" value="Depositar" onclick="
+                cliente1.depositar(document.getElementById('cantidad').value);
+                document.getElementById('saldo').value = cliente1.saldo;
+            " id="depositar"></div>
+        </div>
+
+    </form>
+
+
+    <script>
+        function Cliente(nombre, saldo){
+            this.nombre = nombre;
+            this.saldo = saldo;
+            this.depositar = depositar;
+            this.retirar = retirar;
+        }
+        function depositar(dinero){
+            this.saldo = parseInt(this.saldo) + parseInt(dinero);
+        }
+        function retirar(dinero){
+            this.saldo -= dinero;
+        }
+    </script>
+
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+</body>
+</html>
+
+<!--
+    En el constructor inicializamos la referencia a todos los métodos que contendrá la clase (esto es muy importante y necesario para entender porque las otras dos funciones pertenecen a esta clase):
+
+    this.depositar=depositar;
+    this.extraer=extraer;
+
+    Podemos directamente dentro del constructor implementar los dos métodos con la siguiente sintaxis:
+
+        function Cliente(nombre, saldo) {
+            this.nombre = nombre;
+            this.saldo = saldo;
+            this.depositar = function(dinero) {
+                this.saldo = this.saldo + dinero;
+            }
+            this.extraer = function(dinero) {
+                this.saldo = this.saldo - dinero;
+            }
+        }
+    Luego no hay cambios cuando creamos un objeto de la clase Cliente.
+-->

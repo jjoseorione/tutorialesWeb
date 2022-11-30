@@ -1,0 +1,31 @@
+<!--
+    obj.setAttribute(atributo, valor) sirve para agregar un atributo HTML a algún elemento HTML
+
+    obj.removeAttribute(atributo) quita el atributo a un elemento HTML
+
+    obj.getAttribute(atributo) obtiene el valor de un atributo de un elemento HTML
+
+    obj.hasAttribute(atributo) devuelve un booleano que nos indica si un elemento contiene un atributo específico
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <input type="button" value="Crear link Google" onclick="creaLink('https://www.google.com', 'Google');"><br>
+    <input type="button" value="Crear link localhost" onclick="creaLink('http://127.0.0.1:8080', 'localhost');"><br>
+    <input type="button" value="Crear link Tutoriales Ya" onclick="creaLink('https://www.tutorialesprogramacionya.com/', 'Tutoriales Ya');"><br>
+    <input type="button" value="Quitar hipervínculo" onclick="quitarVinculo();"><br>
+
+    <div id="bloque"></div>
+
+    <div style="margin-top: 3em;"><a href="../">Volver</a></div>
+
+    
+    <script src="funciones.js"></script>
+</body>
+</html>

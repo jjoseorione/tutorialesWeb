@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <h2>Ingrese su grado de estudios:</h2>
+    <form action="" method="post">
+        <input type="radio" name="estudios" value="primaria" id="prim" class="radio">Primaria<br>
+        <input type="radio" name="estudios" value="secundaria" id="sec" class="radio">Secundaria<br>
+        <input type="radio" name="estudios" value="preparatoria" id="prep" class="radio">Preparatoria<br>
+        <input type="radio" name="estudios" value="licenciatura" id="lic" class="radio">Licenciatura<br>
+        <input type="radio" name="estudios" value="posgrado" id="pos" class="radio">Posgrado<br>
+        <p><input type="button" value="Enviar" onclick="imprime();"></p>
+
+    </form>
+    <script>
+        function imprime(){
+            if(document.getElementById('prim').checked)
+                alert("primaria");
+            if(document.getElementById('sec').checked)
+                alert("secundaria");
+            if(document.getElementById('prep').checked)
+                alert("preparatoria");
+            if(document.getElementById('lic').checked)
+                alert("licenciatura");
+            if(document.getElementById('pos').checked)
+                alert("posgrado");
+
+        }
+    </script>
+
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+</body>
+</html>

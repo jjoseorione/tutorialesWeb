@@ -1,0 +1,41 @@
+<!--
+    Por defecto el orden que indicamos los div de las columnas en el archivo HTML es como aparecen luego en el navegador.
+
+    Si por algún motivo queremos que ese flujo del archivo HTML no se tenga en cuenta tenemos una serie de clases que le asignan a las columnas el orden de visualización. Las clases son order-* y order-[sm,md,lg,xl,xxl]-*
+
+    Cuando se utiliza el número y tamaño de columna por medio de la clase order, se omite en la clase col.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body style="font-family: sans-serif;">
+    <div class="container">
+        <div class="row">
+            <div class="col order-3" style="background-color: #bbf;">
+                <h4>Columna 1</h4>
+                <p>Ésta es la primera columna en el código HTML</p>
+            </div>
+            <div class="col order-1" style="background-color: #bcf;">
+                <h4>Columna 2</h4>
+                <p>Ésta es la segunda columna en el código HTML</p>
+            </div>
+            <div class="col order-2" style="background-color: #bdf;">
+                <h4>Columna 3</h4>
+                <p>Ésta es la tercera columna en el código HTML</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 3em;">
+            <a href="./" class="volver">← Volver</a>
+        </div>
+    </div>
+
+</body>
+</html>

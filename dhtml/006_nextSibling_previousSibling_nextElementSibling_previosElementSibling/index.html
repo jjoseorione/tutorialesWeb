@@ -1,0 +1,29 @@
+<!--
+    La propiedad nextSibling retorna la referencia del nodo hermano que se encuentra inmediatamente más abajo en el archivo HTML, pero a la misma altura si lo pensamos al archivo HTML como un árbol. También existe una propiedad llamado previusSibling que retorna la referencia del nodo hermano que se encuentra inmediatamente más arriba en el archivo HTML. nextSibling y previusSibling retornan null en caso de no existir más nodos en dicho nivel.
+
+    Recordar:Algo muy importante que hay que tener en cuenta es que si hay un salto de línea entre dos párrafos lo interpreta y crea un nodo de texto y la propiedad nextSibling y previusSibling lo accede.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <div>
+        <p id="parrafo1">Éste es el primer párrafo</p>
+        <p id="parrafo2">Éste es el segundo párrafo</p>
+        <p>Éste es el tercer párrafo</p>
+    </div>
+    <input type="button" value="todos los párrafos" onclick="todosLosParrafos();">
+    <input type="button" value="nextSibling" onclick="proximoNodoHermano();">
+    <input type="button" value="previousSibling" onclick="anteriorNodoHermano();">
+    <input type="button" value="nextElementSibling" onclick="proximoElementoHermano();">
+    <input type="button" value="previousElementSibling" onclick="anteriorElementoHermano();">
+    <script src="funciones.js"></script>
+
+    <div style="margin-top: 3em;"><a href="../">Volver</a></div>
+</body>
+</html>

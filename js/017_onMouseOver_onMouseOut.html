@@ -1,0 +1,46 @@
+<!--
+    El evento onMouseOver se ejecuta cuando pasamos la flecha del mouse sobre un elemento HTML y el evento onMouseOut cuando la flecha abandona el mismo.
+
+    Para probar estos eventos implementaremos una página que cambie el color de un cuadrado de 200px de ancho y 200px de alto.
+    Implementaremos una función que cambie el color con un valor que llegue como parámetro. Cuando retiramos la flecha del mouse volvemos a pintar de negro el fondo de cuadrado:
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <p>
+        <a href="#" onMouseOver="pintar('#f00')" onMouseOut="pintar('#FFF')">Rojo</a>
+        <a href="#" onMouseOver="pintar('#0f0')" onMouseOut="pintar('#FFF')">Verde</a>
+        <a href="#" onMouseOver="pintar('#00f')" onMouseOut="pintar('#FFF')">Azul</a>
+        <div id="cuadrado1" style="background: #FFF; width:200px; height:200px;"></div>
+    </p>
+    <p>
+        <table border="1">
+            <tr>
+                <td onMouseOver="pintarCelda(this,'#f00')" onMouseOut="pintarCelda(this,'#fff')">rojo</td>
+                <td onMouseOver="pintarCelda(this,'#0f0')" onMouseOut="pintarCelda(this,'#fff')">verde</td>
+                <td onMouseOver="pintarCelda(this,'#00f')" onMouseOut="pintarCelda(this,'#fff')">azul</td>
+            </tr>
+        </table>
+    </p>
+    <script>
+        function pintar(color){
+            document.getElementById("cuadrado1").style.backgroundColor = color;
+        }
+
+        function pintarCelda(obj,color){
+            obj.style.backgroundColor = color;
+        }
+        
+    </script>
+
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+</body>
+</html>

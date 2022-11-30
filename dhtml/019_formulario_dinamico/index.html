@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <center><h3>Bienvenido</h3></center>
+    <form action="#" method="post" id="formulario">
+        <p>
+            ¿Tiene usted hijos?
+            <select name="hijos" id="hijos" onchange="preguntarCuantos()">
+                <option disabled selected></option>
+                <option value="1">Sí</option>
+                <option value="0">No</option>
+            </select>
+        </p>
+    </form>
+
+    <div style="margin-top: 3em;"><a href="../">Volver</a></div>
+
+    
+    <script src="funciones.js"></script>
+</body>
+</html>

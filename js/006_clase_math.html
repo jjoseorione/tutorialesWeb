@@ -1,0 +1,62 @@
+<!--
+    Esta clase es un contenedor que tiene diversas constantes (como Math.E y Math.PI) y un conjunto de métodos matemáticos:
+
+    Método            |  Descripción                                                                  |   Expresión de ejemplo  |  Resultado
+    ------------------|-------------------------------------------------------------------------------|-------------------------|---------------
+    abs               |  Valor absoluto                                                               |   Math.abs(-2)          |  2
+    sin, cos, tan     |  Funciones trigonométricas, reciben el argumento en radianes                  |   Math.cos(Math.PI)     |  -1
+    asin, acos, atan  |  Funciones trigonométricas inversas                                           |   Math.asin(1)          |  1.57
+    exp, log          |  Exponenciación y logaritmo, base E                                           |   Math.log(Math.E)      |  1
+    ceil              |  Devuelve el entero más pequeño mayor o igual al argumento                    |   Math.ceil(-2.7)       |  -2
+    floor             |  Devuelve el entero más grande menor o igual al argumento                     |   Math.floor(-2.7)      |  -3
+    round             |  Devuelve el entero más cercano o igual al argumento                          |   Math.round(-2.7)      |  -3
+    min, max          |  Devuelve el menor (o mayor) de sus dos argumentos                            |   Math.min(2,4)         |  2
+    pow               |  Exponenciación, siendo el primer argumento la base y el segundo el exponente |   Math.pow(2,3)         |  8
+    sqrt              |  Raíz cuadrada                                                                |   Math.sqrt(25)         |  5
+    random            |  Genera un valor aleatorio comprendido entre 0 y 1.                           |   Math.random()         |  
+
+    Adicionalmente se muestra cómo escribir en un documento de HTML sin borrar lo anterior. Éste es un tema del tutorial de DHTML.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <h2>Adivina en qué número estoy pensando...</h2>
+    <button onclick="jugarLoteria();">Jugar</button>
+    <p>
+    <script>
+        function jugarLoteria(){
+            let num = parseInt(prompt("Escribe un número del 1 al 5"));
+            if(num < 1 || num > 5){
+                if(num < 0 || num > 9)
+                    window.alert("Seas mamón...");
+                else
+                    window.alert("Te dije que del 1 al 5 >:C");
+            }
+            else{
+                let rand = Math.round(Math.random()*4 + 1);
+                let jugar = document.createElement('span');
+                jugar.innerHTML = "Estoy pensando en el número " + rand;
+                document.body.append(jugar);
+                 
+                if(rand == num){
+                    let ganar = document.createElement('span');
+                    ganar.innerHTML = ", ¡Ganaste!<div></div>";
+                    document.body.append(ganar);
+                }
+                else{
+                    let perder = document.createElement('span');
+                    perder.innerHTML = ". Perdiste :C<div></div>";
+                    document.body.append(perder);
+                }
+            }
+        }
+    </script>
+
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+</body>
+</html>

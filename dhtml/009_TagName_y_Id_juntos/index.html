@@ -1,0 +1,34 @@
+<!--
+    En este ejemplo vamos a combinar getElementById y getElementsByTagName para obtener todos las etiquetas iguales dentro de otra etiqueta.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <div id="bloque1">
+        <h1>Primer bloque de párrafos</h1>
+        <p>Primer párrafo</p>
+        <p>Segundo párrafo</p>
+        <p>Tercer párrafo</p>
+    </div>
+
+    <div id="bloque2">
+        <h1>Segundo bloque de párrafos</h1>
+        <p>Primer párrafo</p>
+        <p>Segundo párrafo</p>
+        <p>Tercer párrafo</p>
+    </div>
+
+    <input type="button" value="Agregar punto final" id="boton" title="Agrega un punto final a todos los párrafos del segundo bloque" onclick="puntoFinal()">
+
+    <div style="margin-top: 3em;"><a href="../">Volver</a></div>
+
+
+    <script src="funciones.js"></script>
+</body>
+</html>

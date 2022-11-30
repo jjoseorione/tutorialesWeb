@@ -1,0 +1,72 @@
+<!--
+    Clases del form:
+    form-label para label
+    form-control
+
+    Para el botón de submit se usa el elemento button y se usan las clases btn y btn-primary. Esta última se utiliza para seleccionar el botón primario por default. 
+
+    Las clases
+        mt-auto     mb-auto     ms-auto     me-auto
+        mt-1        mb-1        ms-1        me-1
+        mt-2        mb-2        ms-2        me-2
+        mt-3        mb-3        ms-3        me-3
+        mt-4        mb-4        ms-4        me-4
+        mt-5        mb-5        ms-5        me-5
+    permiten modificar el margen de un div. t = top, b = bottom, s = start, e = end, x = eje x, y = eje y. De igual forma, se puede modificar el padding cambiando la m por p. Los números del 1 al 5 son unidades de $spacer que por default equivalen a 1rem. En este ejemplo son utilizados para envolver cada input y agregarles un margen.
+
+    Para más información, visitar: https://getbootstrap.com/docs/5.0/utilities/spacing/
+
+
+         -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body style="font-family: sans-serif;">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3" style="border: 0.2em solid #ddd; padding: 3rem; border-radius: 1em;">
+                <h3 class="tituloFormulario mb-5">Inicio de sesión</h3>
+                <form action="" method="">
+                    <!-- Text -->
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Usuario:</label>
+                        <input type="usuario" class="form-control" id="usuario" name="usuario">
+                    </div>
+                    <!-- password -->
+                    <div class="mb-3">
+                        <label for="clave" class="form-label">Contraseña:</label>
+                        <input type="password" class="form-control" id="clave" name="clave">
+                    </div>
+                    <!-- file -->
+                    <div class="mb-3">
+                        <label for="efirma" class="form-label">Firma Digital:</label>
+                        <input type="file" class="form-control" id="efirma" name="efirma">
+                    </div>
+                    <!-- textarea -->
+                    <div class="mb-3">
+                        <label for="comentarios" class="form-label">Comentarios:</label>
+                        <textarea class="form-control" id="comentarios" name="comentarios"></textarea>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-4">
+                            <a href="./" class="btn btn-primary">← Volver</a>
+                        </div>
+                        <div class="col-4" style="text-align: right;">
+                            <button type="submit" class="btn btn-primary">Confirmar</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

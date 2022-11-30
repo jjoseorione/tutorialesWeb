@@ -1,0 +1,38 @@
+<!--
+    node.innerHTML automáticamente todos los elementos HTML y nodos de texto que le indicamos cuando le asignamos el valor. Es una de las formas más utilizadas para efectuar el cambio masivo de nodos de elementos y datos.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .caja{
+            border: solid blue 1px;
+            padding: 1em 1em;
+            margin: 1em 0;
+        }
+    </style>
+</head>
+<body style="font-family: sans-serif;">
+    <p>Enlace 1: <input type="text" id="text1" placeholder="www.google.com" size="30"></p>
+    <p>Enlace 2: <input type="text" id="text2" placeholder="www.tutorialesprogramacionya.com" size="30"></p>
+    <input type="button" id="boton1" value="Crear enlaces" onclick="crearEnlaces();">
+
+    <div id="div1" class="caja">
+        <h3>Sin innerHTML</h3>
+    </div>
+    <div id="div2" class="caja">
+        <h3>Con innerHTML</h3>
+    </div>
+
+
+
+    <div style="margin-top: 3em;"><a href="../">Volver</a></div>
+
+    
+    <script src="funciones.js"></script>
+</body>
+</html>

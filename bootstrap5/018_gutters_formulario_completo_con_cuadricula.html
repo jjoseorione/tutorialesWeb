@@ -1,0 +1,93 @@
+<!-- •••• FORMULARIO COMPLEJO CON CUADRÍCULAS •••• -->
+<!-- 
+    En bootstrap podemos crear filas que contengan más de las 12 columnas predefinidas. Las filas que sobrepasen a las 12 iniciales, se alinearán en una nueva línea.
+
+    La clase g-* define los gutters (canaletas). Ésta es la separación (padding) que existe entre filas y columnas. Para más información, consultar: https://getbootstrap.com/docs/5.0/layout/gutters/
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body style="font-family: sans-serif;">
+    <div class="row mt-5"><div class="col-8 offset-2">
+        <form>
+            <h3 class="tituloFormulario mb-3">Sign Up</h3>
+            <div class="row g-3">
+                <div class="col-lg-6">
+                    <label for="mail" class="form-label">
+                        Mail
+                    </label>
+                    <input type="email" name="mail" class="form-control" id="mail">
+                </div>
+                <div class="col-lg-3">
+                    <label for="pass" class="form-label">
+                        Password
+                    </label>
+                    <input type="password" name="pass" class="form-control" id="pass">
+                </div>
+                <div class="col-lg-3">
+                    <label for="pass_conf" class="form-label">
+                        Confirm password
+                    </label>
+                    <input type="password" name="pass_conf" class="form-control" id="pass_conf">
+                </div>
+                <div class="col-lg-12">
+                    <label for="address" class="form-label">
+                        Address
+                    </label>
+                    <input type="text" name="address" id="address" class="form-control">
+                </div>
+                <div class="col-lg-5">
+                    <label for="city" class="form-label">
+                        City
+                    </label>
+                    <input type="text" name="city" id="city" class="form-control">
+                </div>
+                <div class="col-lg-5">
+                    <label for="state" class="form-label">
+                        State
+                    </label>
+                    <select name="state" id="state" class="form-select">
+                        <option value="">CDMX</option>
+                        <option value="">Estado de México</option>
+                        <option value="">Jalisco</option>
+                        <option value="">Nuevo León</option>
+                        <option value="">Puebla</option>
+                        <option value="">Querétaro</option>
+                    </select>
+                </div>
+                <div class="col-lg-2">
+                    <label for="cp" class="form-label">
+                        Post Code
+                    </label>
+                    <input type="text" name="cp" id="cp" class="form-control">
+                </div>
+                <div class="col-lg-12">
+                    <label for="comments" class="form-label">Comentarios</label>
+                    <textarea class="form-control" name="comments" id="comments" rows="3"></textarea>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-check form-switch">
+                        <input type="checkbox" name="terms" class="form-check-input">
+                        <label for="terms" class="form-label">
+                            I accept terms and conditions
+                        </label>
+                    </div>
+                </div>
+                <div class="col-6" style="text-align: center;">
+                    <a href="./" class="btn btn-secondary">← Volver</a>
+                </div>
+                <div class="col-6" style="text-align: center;">
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+                </div>
+        </form>
+    </div>
+
+</body>
+</html>

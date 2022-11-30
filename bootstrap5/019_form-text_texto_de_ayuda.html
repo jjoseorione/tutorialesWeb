@@ -1,0 +1,55 @@
+<!-- ••••••••••••• -->
+<!--
+    La clase form-text sirve nos ayuda a crear un pequeño div que servirá como texto para un input 
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body style="font-family: sans-serif;">
+    <div class="row mt-5"><div class="col-6 offset-3">
+        <form>
+            <h3 class="tituloFormulario mb-3">Alta de Usuario</h3>
+            <div class="row g-3">
+                <div class="col-xl-6 offset-xl-3">
+                    <label for="correo" class="form-label">
+                        Correo Electrónico
+                    </label>
+                    <input type="email" name="correo" class="form-control" id="correo">
+                </div>
+                <div class="col-xl-6 offset-xl-3">
+                    <label for="clave" class="form-label">
+                        Contraseña
+                    </label>
+                    <input type="password" name="clave" class="form-control" id="clave">
+                    <div class="form-text">Debe contener al menos 8 caracteres, un número y un símbolo</div>
+                </div>
+                <div class="col-xl-6 offset-xl-3">
+                    <label for="clave_r" class="form-label">
+                        Confirmar Contraseña
+                    </label>
+                    <input type="password" name="clave_r" class="form-control" id="clave_r">
+                    <div class="form-text">Las contraseñas deben coincidir</div>
+                </div>
+                <div class="col-6" style="text-align: center;">
+                    <a href="./" class="btn btn-secondary">Volver</a>
+                </div>
+                <div class="col-6" style="text-align: center;">
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+                </div>
+            </div>
+        </form>
+    </div></div>
+
+
+
+
+
+</body>
+</html>

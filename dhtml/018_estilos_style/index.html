@@ -1,0 +1,54 @@
+<!-- Es posible acceder al estilo y todas las propiedades de un elemento HTML utilizando la propiedad elem.style. En javascript no están permitidos los guiones para nombrar variables, así que las propiedades css que contengan guiones en su nombre serán cambiadas a camelCase. Por ejemplo, font-size pasa a ser fontSize.-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <p id="parrafo">I am the suppressed darkness inside of you</p>
+    <p>
+        <select id="tamanoFuente">
+            <option disabled selected>Elige un tamaño</option>
+            <option value="0.5em">0.5x</option>
+            <option value="1.0em">1.0x</option>
+            <option value="1.5em">1.5x</option>
+            <option value="2.0em">2.0x</option>
+            <option value="2.5em">2.5x</option>
+            <option value="3.0em">3.0x</option>
+        </select>
+    </p>
+    <p>
+        <select id="colorFondo">
+            <option disabled selected>Elige un color</option>
+            <option value="dodgerblue">Azul</option>
+            <option value="tomato">Rojo</option>
+            <option value="pink">Rosa</option>
+            <option value="mediumpurple">Morado</option>
+            <option value="yellow">Amarillo</option>
+            <option value="greenyellow">Verde</option>
+        </select>
+    </p>
+    <p>
+        <select id="alineacion">
+            <option disabled selected>Elige una opción</option>
+            <option value="right">Derecha</option>
+            <option value="center">Centro</option>
+            <option value="right">Izquierda</option>
+        </select>
+    </p>
+    <p>
+        <button onclick="cambiarEstilo();">
+            Enviar
+        </button>
+    </p>
+
+
+    <div style="margin-top: 3em;"><a href="../">Volver</a></div>
+
+    
+    <script src="funciones.js"></script>
+</body>
+</html>

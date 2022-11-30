@@ -1,0 +1,51 @@
+<!--
+    Si tomamos la refencia de un nodo y lo agregamos con appendChild() a otro nodo distinto del que lo contenía originalmente, lo que sucederá es que se moverá de un padre a otro, de forma que desaparecerá de donde se encontraba originalmente. Si queremos copiar un nodo para que se encuentre dentro de otro, se debe usar el método nodo.cloneNode(). cloneNode recibe como parámetro True para realizar la copia del nodo node junto con sus hijos o False para realizar la copia únicamente del nodo node sin sus hijos; el valor por default es false.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .caja{
+            border: solid blue 1px;
+            padding: 1em 1em 1em 1em;
+        }
+    </style>
+</head>
+<body style="font-family: sans-serif;">
+    <h1>Copiar y mover nodos</h1>
+
+    <div>
+        <input type="button" value="Copiar último nodo 1 a 2" onclick="copiarUltimo('lista1', 'lista2');">
+        <input type="button" value="Mover último nodo 1 a 2" onclick="moverUltimo('lista1', 'lista2');">
+        <input type="button" value="Copiar último nodo 2 a 1" onclick="copiarUltimo('lista2', 'lista1');">
+        <input type="button" value="Mover último nodo 2 a 1" onclick="moverUltimo('lista2', 'lista1');">
+    </div>
+
+    <div class="caja">
+        <h3>Lista 1</h3>
+        <ul id="lista1">
+            <li>Opción 1</li>
+            <li>Opción 2</li>
+            <li>Opción 3</li>
+            <li>Opción 4</li>
+        </ul>
+    </div>
+
+    <div class="caja">
+        <h3>Lista 2</h3>
+        <ul id="lista2">
+        </ul>
+    </div>
+
+
+
+    <div style="margin-top: 3em;"><a href="../">Volver</a></div>
+
+    
+    <script src="funciones.js"></script>
+</body>
+</html>

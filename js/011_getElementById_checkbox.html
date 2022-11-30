@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <h2>Seleccione los lenguajes de programación que usted domina</h2>
+    <form action="" method="post">
+        <div><input type="checkbox" name="php" id="leng1" onchange="total()"> PHP</div>
+        <div><input type="checkbox" name="c" id="leng2" onchange="total()"> C</div>
+        <div><input type="checkbox" name="c++" id="leng3" onchange="total()"> C++</div>
+        <div><input type="checkbox" name="c#" id="leng4" onchange="total()"> C#</div>
+        <div><input type="checkbox" name="java" id="leng5" onchange="total()"> PHP</div>
+        <div>Usted conoce <input type="number" name="cantidad" id="cantidad" disabled> lenguajes</div>
+    </form>
+    <script>
+        function total(){
+            var totalLenguajes=0;
+            if(document.getElementById('leng1').checked)
+                totalLenguajes++;
+            if(document.getElementById('leng2').checked)
+                totalLenguajes++;
+            if(document.getElementById('leng3').checked)
+                totalLenguajes++;
+            if(document.getElementById('leng4').checked)
+                totalLenguajes++;
+            if(document.getElementById('leng5').checked)
+                totalLenguajes++;
+            document.getElementById('cantidad').value = totalLenguajes;
+        }
+    </script>
+
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!--
+    El evento onLoad se ejecuta al final de la carga de la página en el navegador. Tener en cuenta que se dispara el evento cuando todos los elementos HTML están creados y se han descargado todos los recursos que hace referencia la página como podrían ser las imágenes, archivos de hoja de estilo etc. Un uso posible es para fijar el foco en algún control de un formulario, para que el operador no tenga que activar con el mouse dicho control.
+
+    Este evento está asociado a la etiqueta body.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;" onload="activarPrimerControl();">
+    <form action="" method="post">
+        Usuario: <input type="text" name="usuario" id="usuario"><br>
+        Contraseña: <input type="password" name="contrasena" id="contrasena">
+    </form>
+    <script>
+        function activarPrimerControl(){
+            document.getElementById("usuario").focus();
+        }
+    </script>
+
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+</body>
+</html>

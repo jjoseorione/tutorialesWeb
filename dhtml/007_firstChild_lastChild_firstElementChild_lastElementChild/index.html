@@ -1,0 +1,27 @@
+<!--
+    Otra forma de acceder al primer y último nodo hijo es por medio de las propiedades firstChild (retorna la referencia del primer hijo, es lo mismo que poner obj.childNodes[0]) y obj.lastChild (retorna la referencia del último hijo, es sinónimo de poner obj.childNodes[obj.childNodes.length-1])
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body style="font-family: sans-serif;">
+    <div id="parrafos">
+        <p>Éste es el primer párrafo</p>
+        <p>Éste es el segundo párrafo</p>
+        <p>Éste es el tercer párrafo</p>
+    </div>
+    <input type="button" value="firstChild" onclick="primerHijo('parrafos');">
+    <input type="button" value="lastChild" onclick="ultimoHijo('parrafos');">
+    <input type="button" value="firstElementChild" onclick="primerElementoHijo('parrafos');">
+    <input type="button" value="lastElementChild" onclick="ultimoElementoHijo('parrafos');">
+    <script src="funciones.js"></script>
+
+    <div style="margin-top: 3em;"><a href="../">Volver</a></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!--
+    Bootstrap es un framework de CSS que nos facilita y estandariza el desarrollo de sitios web.
+    Esta pensando para que se adapte tanto a las pantallas de equipos de escritorio como a móviles y tablets.
+
+    Bootstrap es desarrollado y mantenido por la empresa Twitter y la ha liberado como un producto Open Source.
+
+    Tiene una filosofía muy intuitiva para el maquetado de sitios web que puede ser rápidamente aprendida por desarrolladores que no vienen del mundo del diseño web.
+
+    El corazón de este framework es un archivo CSS que lo podemos descargar del sitio http://getbootstrap.com.
+
+    Luego debemos enlazar a nuestra página con el archivo boottrap.min.css y ya podemos utilizar esta biblioteca.
+
+    La primera clase que podemos probar es class="container" (esta muestra todo el contenido del div centrado), además el framework ya define estilos por defecto para una gran cantidad de elementos HTML de la página, por ejemplo define la tipografía de tipo Helvética.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body style="font-family: sans-serif;">
+    <div class="container" style="background-color: gray">
+        <h1>Título 1</h1>
+        <p>Div con clase container. La clase container agrega margen.</p>
+    </div>
+    <div style="background-color: gray">
+        <h1>Título 2</h1>
+        <p>Div sin clase container.</p>
+    </div>
+
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+
+</body>
+</html>

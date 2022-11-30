@@ -1,0 +1,13 @@
+Para poder entender y trabajar con DHTML debemos conocer y entender HTML, JavaScript y CSS. Estas tres tecnologías son indispensables para introducirse en el mundo de DHTML (HTML dinámico).
+Si ya realizó los cursos de CSS Ya, JavaScript Ya seguro que está en condiciones de entender este tutorial.
+
+DHTML tiene por objetivo aumentar la funcionalidad de un sitio web. Se puede utilizar para crear animaciones, menúes desplegables, mostrar y ocultar partes de una página luego que la página fue cargada completamente, crear un entramado de capas que con sólo el HTML y CSS sería imposible alcanzar. La funcionalidad de DHTML ha remplazado por completo a otras herramientas que han quedado obsoletas como Flash, el DHTML ofrece la ventaja de que no requiere ningún tipo de plug-in para poder utilizarlo es un API que viene incorporada en nuestro navegador web (Chrome, FireFox, Edge etc.)
+
+DHTML ofrece a los creadores de páginas web la posibilidad de modificar, cambiar la apariencia, ocultar, mostrar y animar el contenido dinámicamente.
+
+Con DHTML podemos, luego de cargada la página en el navegador, acceder a cada una de las etiquetas HTML, modificar sus atributos, ocultarlas, volverlas a mostrar y acceder al estilo definido para dicha marca.
+Mediante JavaScript accedemos al DOM (Document Object Model) sin utilizar librerías específicas como puede ser JQuery.
+
+Debe quedar bien en claro que DHTML no es un lenguaje nuevo sino la combinación de HTML, CSS y JavaScript.
+El DHTML es otro de los escalones que debemos dominar para poder introducirnos en el mundo de las API Fetch, AJAX etc.
+

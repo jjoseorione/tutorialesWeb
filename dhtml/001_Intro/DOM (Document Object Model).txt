@@ -1,0 +1,21 @@
+Para poder aplicar los conceptos de DHTML debemos conocer a la perfección el DOM (Document Object Model - Modelo Objeto Documento)
+El DOM es otra forma para representar una página web. Para entender que es el DOM veamos tres tipos de personas frente a una página web:
+
+1 - Un usuario de internet que conoce muy poco sobre el mundo de la computación, ve una página web como una ventana que contiene texto con distintos tamaños y colores, imágenes, enlaces etc. esto es lo que ve un usuario común de internet (img1).
+
+2 - Ahora veamos como ve una página web una persona que se ha iniciado hace muy poco en el mundo del diseño de páginas web, este usuario ve un poco más allá de lo que ve un usuario común, puede identificar que texto dispuso en la marca title del documento, diferencia las distintas marcas HTML para la estructura de la página, si ha definiedo estilos, si incorporó algún archivo externo css, Javascript etc. Este segundo tipo de personas puede imaginar el contendino HTML y CSS de la página (img2).
+
+
+3 - Ahora por último, para un programador de sitios web tiene una visión mucho más profunda, puede decir si la página según su interactividad tiene apliques de programación (img3).
+
+
+Este último tipo de persona puede identificar más allá del código HTML y CSS de la página, intuye perfectamente si hay programación por detrás del esqueleto HTML y la definición de las hojas de estilo.
+
+Este tercer tipo de persona debe conocer perfectamente el DOM.
+¿Entonces que es el DOM?
+El DOM es otra forma de ver el contenido de la página. Con el DOM, todos los elementos HTML se insertan en un árbol cuyos nodos son las marcas HTML y las hojas, los valores propiamente dichos de las marcas. Por medio de JavaScript podemos acceder y modificar este árbol de marcas y hacer que la página varíe luego que ya se haya mostrado en el navegador. De aquí el nombre de esta tecnología DHTML es decir Dynamic Hyper Text Markup Language.
+
+Mediante el DOM podemos acceder al contenido y estilo de cada marca del documento y modificarlo de acuerdo a algún evento.
+Mediante el DOM podemos insertar, borrar, modificar marcas HTML. Podemos acceder a la hoja de estilo definida a la página y dinámicamente agregar, modificar o borrar propiedades. Todos esto sin tener que recargar la página del servidor, es decir todo se hace en el cliente (navegador) mediante JavaScript.
+
+En este curso nos centraremos en el estudio del DOM (Document Object Model) que es un API (Application Programming Interface) que nos provee todo navegador para manipular la página web en forma dinámica.

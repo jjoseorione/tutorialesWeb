@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <script>
+        let cadena = prompt("Escribe algo...");
+        document.write("<h1>Ejemplo de clase string</h1>");
+        if(cadena){
+            document.write("<div>La cadena ingresda es: " + cadena + "</div>");
+            document.write("<div>La cantidad de caracteres es: " + cadena.length + "</div>");
+            document.write("<div>El primer carácter es " + cadena.charAt(0) + "</div>");
+            for(let cont = 20; cont > 0; cont--){
+                if(cadena.length - 3 >= cont){
+                    document.write("<div>Los primeros " + (cadena.length - 3) + " caracteres son " + cadena.substring(0,cadena.length - 3) + "</div>");
+                    break; 
+                }
+            }
+            if(cadena.indexOf(':v') != -1 || cadena.indexOf(':V') != -1)
+                document.write("<div>Se detectó la cadena ':v' ¿acaso eres papulince?</div>");
+            document.write("<div> La cadema convertida a mayúsculas es " + cadena.toUpperCase() + "</div>");
+            document.write("<div> La cadema convertida a minúsculas es " + cadena.toLowerCase() + "</div>");
+        }
+        else
+            document.write("Oh, pues >:(");
+        
+    </script>
+
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+</body>
+</html>

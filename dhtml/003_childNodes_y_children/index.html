@@ -1,0 +1,48 @@
+<!--
+    Cada nodo tiene un solo nodo padre, pero puede tener muchos hijos. Ejemplo:
+    <body>
+        <h1>Tutorial de DHTML</h1>
+        <p>El sitio web pretende acercar los conceptos básicos de <em>DHTML</em></p>
+        <p>Se recomienda:</p>
+        <ul>
+            <li>Leer el concepto técnico</li>
+            <li>Ejecutar el ejemplo resuelto</li>
+            <li>Resolver los problemas propuestos</li>
+        </ul>
+    </body>
+
+    En este ejemplo, el nodo body tiene 4 hijos, la marca h1 tiene 1 hijo, cada marca li tiene un hijo. Los nodos que no tienen descendientes son nlos nodos hoja.
+
+    El DOM provee a cada nodo de un vector que almacena la referencia a cada nodo hijo. La propiedad se llama childNodes. Este vector almacena una referencia a cada nodo hijo.
+
+    Los nodos pueden ser de tipo ELEMENT_NODE (nodo elemento) p TEXT_NODE (nodo texto).
+
+    Entre la marca <div id="bloque"> y la marca <p> hay un salto de línea (el navegador crea un nodo de texto, este es el primer nodo).
+    Luego el primer párrafo es el segundo nodo.
+    Entre el primer párrafo y el segundo hay otro salto de línea (este es el tercer nodo) y así sucesivamente. Si contamos los párrafos y saltos de línea podremos contabilizar los 7 hijos.
+    Si no dejamos el salto de línea entre una párrafo y otro y tampoco dejamos salto de línea después del div y antes del cerrado del div, los hijos serán 3.
+
+    En cambio la propiedad children retorna solo los nodos de tipo elemento. Volvamos a codificar el problema anterior para mostrar la cantidad de nodos de tipo elemento.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>childNodes y children</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <div id="bloque">
+        <p>Éste es el primer párrafo</p>
+        <p>Éste es el segundo párrafo</p>
+        <p>Éste es el tercer párrafo</p>
+    </div>
+    <input type="button" value="Cantidad de hijos del DIV" onclick="nodosHijos();">
+    <input type="button" value="Cantidad de hijos del DIV" onclick="elementosHijos();">
+    <script src="funciones.js"></script>
+
+    </div>
+    <div style="margin-top: 3em;"><a href="../">Volver</a></div>
+</body>
+</html>

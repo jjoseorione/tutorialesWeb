@@ -1,0 +1,149 @@
+<!--
+    Si queremos que una página se muestre de forma diferente si la accedemos desde un dispositivo con pantalla muy muy grande, muy grande, grande, mediana, pequeña o muy pequeña podemos asignar múltiples reglas a cada columna.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body style="font-family: sans-serif;">
+    <div class="container">
+        <div class="row">
+            <h1>Primera fila</h1>
+            <p>Sólo tiene 3 modos distintos.</p>
+            <div class="col-xxl-10 col-md-7" style="background-color: #aaa;">
+                <h3>Columna 1</h3>
+                <ul>
+                    <li>10 columnas si la pantalla mide 1400px o más (límite para xxl</li>
+                    <li>7 columnas si la pantalla mide 768px o más (límite para md)</li>
+                    <li>12 columnas si la pantalla mide menos de 768px (colapsa si es menor a md)</li>
+                </ul>
+            </div>
+            <div class="col-xxl-2 col-md-5" style="background-color: #bbb;">
+                <h3>Columna 2</h3>
+                <ul>
+                    <li>2 columnas si la pantalla mide 1400px o más (límite para xxl</li>
+                    <li>5 columnas si la pantalla mide 768px o más (límite para md)</li>
+                    <li>12 columnas si la pantalla mide menos de 768px (colapsa)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1" style="background-color: #444;">
+                1
+            </div>
+            <div class="col-1" style="background-color: #555;">
+                2
+            </div>
+            <div class="col-1" style="background-color: #666;">
+                3
+            </div>
+            <div class="col-1" style="background-color: #777;">
+                4
+            </div>
+            <div class="col-1" style="background-color: #888;">
+                5
+            </div>
+            <div class="col-1" style="background-color: #999;">
+                6
+            </div>
+            <div class="col-1" style="background-color: #aaa;">
+                7
+            </div>
+            <div class="col-1" style="background-color: #bbb;">
+                8
+            </div>
+            <div class="col-1" style="background-color: #ccc;">
+                9
+            </div>
+            <div class="col-1" style="background-color: #ddd;">
+                10
+            </div>
+            <div class="col-1" style="background-color: #eee;">
+                11
+            </div>
+            <div class="col-1" style="background-color: #fff;">
+                12
+            </div>
+        </div>
+
+        <div class="row">
+            <h1>Segunda fila</h1>
+            <p>
+                Tiene 6 modos distintos. La segunda columna trata siempre de mantener su tamaño aunque la primera se haga pequeña. Nunca colapsan.
+            </p>
+            <div class="col-xxl-10 col-xl-9 col-lg-8 col-md-7 col-sm-6 col-5" style="background-color: #aaa;">
+                <h3>Columna 1</h3>
+                <ul>
+                    <li>10 columnas para pantalla >= 1400px</li>
+                    <li>9 columnas para pantalla >= 1200px</li>
+                    <li>8 columnas para pantalla >= 992px</li>
+                    <li>7 columnas para pantalla >= 768px</li>
+                    <li>6 columnas para pantalla >= 576px</li>
+                    <li>5 columnas para pantalla < 576px</li>
+                </ul>
+            </div>
+            <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-5 col-sm-6 col-7" style="background-color: #bbb;">
+                <h3>Columna 2</h3>
+                <ul>
+                    <li>2 columnas para pantalla >= 1400px</li>
+                    <li>3 columnas para pantalla >= 1200px</li>
+                    <li>4 columnas para pantalla >= 992px</li>
+                    <li>5 columnas para pantalla >= 768px</li>
+                    <li>6 columnas para pantalla >= 576px</li>
+                    <li>7 columnas para pantalla < 576px</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1" style="background-color: #444;">
+                1
+            </div>
+            <div class="col-1" style="background-color: #555;">
+                2
+            </div>
+            <div class="col-1" style="background-color: #666;">
+                3
+            </div>
+            <div class="col-1" style="background-color: #777;">
+                4
+            </div>
+            <div class="col-1" style="background-color: #888;">
+                5
+            </div>
+            <div class="col-1" style="background-color: #999;">
+                6
+            </div>
+            <div class="col-1" style="background-color: #aaa;">
+                7
+            </div>
+            <div class="col-1" style="background-color: #bbb;">
+                8
+            </div>
+            <div class="col-1" style="background-color: #ccc;">
+                9
+            </div>
+            <div class="col-1" style="background-color: #ddd;">
+                10
+            </div>
+            <div class="col-1" style="background-color: #eee;">
+                11
+            </div>
+            <div class="col-1" style="background-color: #fff;">
+                12
+            </div>
+        </div>
+
+        <div style="margin-top: 3em;">
+            <a href="./" class="volver">← Volver</a>
+        </div>
+    </div>
+
+</body>
+</html>

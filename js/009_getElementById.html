@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <h2>Formulario feo</h2>
+    <form action="" method="post">
+        <div>
+            Ingrese su nombre: <input type="text" name="nombre" required autocomplete="off" id="inputNombre">
+        </div>
+        <div>
+            Ingrese su edad: <input type="numeric" name="edad" required id="inputEdad">
+        </div>
+        <p>
+            <input type="button" value="Confirmar" onClick="mostrar()">
+        </p>
+    </form>
+    <script>
+        function mostrar(){
+            let nom = document.getElementById("inputNombre").value;
+            let edad = document.getElementById("inputEdad").value;
+            window.alert("Su nombre es " + nom + " y su edad es " + edad);
+        }
+        
+    </script>
+
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+</body>
+</html>

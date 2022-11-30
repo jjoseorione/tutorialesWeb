@@ -1,0 +1,207 @@
+<!--
+    Si se omite el tamaño de una o más columnas de una fila, el tamaño de éstas seré equivalente entre ellas y complementario con las columnas que sí tengan un tamaño definido.
+
+    También es posible utilizar la palabra auto en lugar de un número definido de columnas; de esta manera, la cantidad de columnas se asignará automáticamente con respecto a la cantidad de contenido del div.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body style="font-family: sans-serif;">
+    <div class="container">
+        <div class="row">
+            <h1>Columnas equivalentes</h1>
+            <p>Todas estas sm columnas son equivalentes y se distribuyen de manera igual en la fila, a menos que el tamaño de pantalla sea inferior al mínimo requerido.</p>
+            <div class="col-sm" style="background-color: #aaa;">
+                <h2>Columna 1</h2>
+                <p>Este div toma en automático 1/5 del ancho del row.</p>
+            </div>
+            <div class="col-sm" style="background-color: #bbb;">
+                <h2>Columna 2</h2>
+                <p>Este div toma en automático 1/5 del ancho del row.</p>
+            </div>
+            <div class="col-sm" style="background-color: #ccc;">
+                <h2>Columna 3</h2>
+                <p>Este div toma en automático 1/5 del ancho del row.</p>
+            </div>
+            <div class="col-sm" style="background-color: #ddd;">
+                <h2>Columna 4</h2>
+                <p>Este div toma en automático 1/5 del ancho del row.</p>
+            </div>
+            <div class="col-sm" style="background-color: #eee;">
+                <h2>Columna 5</h2>
+                <p>Este div toma en automático 1/5 del ancho del row.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1" style="background-color: #444;">
+                1
+            </div>
+            <div class="col-1" style="background-color: #555;">
+                2
+            </div>
+            <div class="col-1" style="background-color: #666;">
+                3
+            </div>
+            <div class="col-1" style="background-color: #777;">
+                4
+            </div>
+            <div class="col-1" style="background-color: #888;">
+                5
+            </div>
+            <div class="col-1" style="background-color: #999;">
+                6
+            </div>
+            <div class="col-1" style="background-color: #aaa;">
+                7
+            </div>
+            <div class="col-1" style="background-color: #bbb;">
+                8
+            </div>
+            <div class="col-1" style="background-color: #ccc;">
+                9
+            </div>
+            <div class="col-1" style="background-color: #ddd;">
+                10
+            </div>
+            <div class="col-1" style="background-color: #eee;">
+                11
+            </div>
+            <div class="col-1" style="background-color: #fff;">
+                12
+            </div>
+        </div>
+
+        <div class="row">
+            <h1>Algunas fijas y el resto equivalentes</h1>
+            <p>La primera y última columna tienen un tamaño de columna fijo. El resto son equivalentes al no estar especificadas.</p>
+            <div class="col-3" style="background-color: #aaa;">
+                <h2>Columna 1</h2>
+                <p>Este div mide 3 columnas.</p>
+            </div>
+            <div class="col" style="background-color: #bbb;">
+                <h2>Columna 2</h2>
+                <p>Este div toma en automático 7/3 de columna.</p>
+            </div>
+            <div class="col" style="background-color: #ccc;">
+                <h2>Columna 3</h2>
+                <p>Este div toma en automático 7/3 de columna.</p>
+            </div>
+            <div class="col" style="background-color: #ddd;">
+                <h2>Columna 4</h2>
+                <p>Este div toma en automático 7/3 de columna.</p>
+            </div>
+            <div class="col-2" style="background-color: #eee;">
+                <h2>Columna 5</h2>
+                <p>Este div mide 2 columnas.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1" style="background-color: #444;">
+                1
+            </div>
+            <div class="col-1" style="background-color: #555;">
+                2
+            </div>
+            <div class="col-1" style="background-color: #666;">
+                3
+            </div>
+            <div class="col-1" style="background-color: #777;">
+                4
+            </div>
+            <div class="col-1" style="background-color: #888;">
+                5
+            </div>
+            <div class="col-1" style="background-color: #999;">
+                6
+            </div>
+            <div class="col-1" style="background-color: #aaa;">
+                7
+            </div>
+            <div class="col-1" style="background-color: #bbb;">
+                8
+            </div>
+            <div class="col-1" style="background-color: #ccc;">
+                9
+            </div>
+            <div class="col-1" style="background-color: #ddd;">
+                10
+            </div>
+            <div class="col-1" style="background-color: #eee;">
+                11
+            </div>
+            <div class="col-1" style="background-color: #fff;">
+                12
+            </div>
+        </div>
+
+        <div class="row">
+            <h1>Columna automática</h1>
+            <p>La columna de en medio tiene tamaño fijo. La primera y última tienen la propiedad <strong>auto</strong> que ajustan el número de columnas según el contenido.</p>
+            <div class="col-auto" style="background-color: #aaa;">
+                <h2>Columna 1</h2>
+                <p>El tamaño de este div se genera de forma automática</p>
+            </div>
+            <div class="col-6" style="background-color: #bbb;">
+                <h2>Columna 2</h2>
+                <p>Este div mide 4 columnas.</p>
+            </div>
+            <div class="col-auto" style="background-color: #ccc;">
+                <p>Poco contenido.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1" style="background-color: #444;">
+                1
+            </div>
+            <div class="col-1" style="background-color: #555;">
+                2
+            </div>
+            <div class="col-1" style="background-color: #666;">
+                3
+            </div>
+            <div class="col-1" style="background-color: #777;">
+                4
+            </div>
+            <div class="col-1" style="background-color: #888;">
+                5
+            </div>
+            <div class="col-1" style="background-color: #999;">
+                6
+            </div>
+            <div class="col-1" style="background-color: #aaa;">
+                7
+            </div>
+            <div class="col-1" style="background-color: #bbb;">
+                8
+            </div>
+            <div class="col-1" style="background-color: #ccc;">
+                9
+            </div>
+            <div class="col-1" style="background-color: #ddd;">
+                10
+            </div>
+            <div class="col-1" style="background-color: #eee;">
+                11
+            </div>
+            <div class="col-1" style="background-color: #fff;">
+                12
+            </div>
+        </div>
+
+
+
+        
+        <div style="margin-top: 3em;">
+            <a href="./" class="volver">← Volver</a>
+        </div>
+    </div>
+
+</body>
+</html>

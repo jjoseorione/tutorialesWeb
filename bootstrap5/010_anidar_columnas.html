@@ -1,0 +1,42 @@
+<!--
+    Las columnas pueden anidarse sin ningún problema en Bootstrap. La forma de lograr esto es declarar un div de tipo fila dentro de la columna deseada y dentro de éste
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body style="font-family: sans-serif;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5" style="background-color: #bbf;">
+                <h4>Columna 1</h4>
+                <p>Through the black, the hull is stacked</p>
+            </div>
+            <div class="col-md-7" style="background-color: #bcf;">
+                <h4>Columna 2</h4>
+                <p>Taking in the haul from Alshain</p>
+                <div class="row">
+                    <div class="col-sm-6" style="background-color: #bdf;">
+                       <h4>Columna 2.1</h4>
+                       <p>Growing cracks, but still intact</p>
+                    </div>
+                    <div class="col-sm-6" style="background-color: #bef;">
+                       <h4>Columna 2.2</h4>
+                       <p>Encroaching on the Cygnus domain</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 3em;">
+            <a href="./" class="volver">← Volver</a>
+        </div>
+    </div>
+
+</body>
+</html>

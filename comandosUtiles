@@ -1,0 +1,3 @@
+git config --global --add remote.origin.proxy "dirección_proxy"  //configurar origen de proxy
+git config --global http.proxy http://USUARIO:Contraseña@skytriton1.sky.com:8080
+

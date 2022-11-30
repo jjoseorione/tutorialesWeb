@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <script>
+        function cargar(sueldos){
+            for(let count = 0; count < sueldos.length; count++){
+                let input = prompt('Ingrese sueldo');
+                sueldos[count] = parseInt(input);
+            }
+        }
+        function calcularNomina(sueldos){
+            let total = 0;
+            document.write("<h2>Cálculo de nómina</h2>");
+            document.write("<table>");
+            document.write("<tr>");
+            document.write("<th>No. Emp</th>");
+            document.write("<th>Sueldo</th>");
+            document.write("</tr>");
+            for (let count = 0; count < sueldos.length; count++){
+                total += sueldos[count];
+                document.write("<tr>");
+                document.write("<td>" + (count + 1) + "</td>");
+                document.write("<td>" + sueldos[count] + "</td>");
+                document.write("</tr>");
+            }
+            document.write("<tr>");
+            document.write("<th>Total:</th>");
+            document.write("<td>" + total +"</td>")
+            document.write("</tr>");
+            document.write("</table>");
+        }
+
+        let nomina = new Array(5);
+        console.log(nomina.length);
+        cargar(nomina);
+        calcularNomina(nomina);
+    </script>
+
+    <div style="margin-top: 3em;"><a href="./">Volver</a></div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!-- ••••••••••••• -->
+<!-- 
+    form-check para el div que envuelve cada opción 
+    form-check-input para el checkbox o radio
+    form-check-label para el label de cada opción
+
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body style="font-family: sans-serif;">
+    <div class="container">
+        <h3 class="tituloFormulario">Radios y Checkbox</h3>
+        <form class="my-5">
+            <h4>Con salto de línea</h4>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="check1" id="check1">
+                <label class="form-check-label" for="check1">Opción 1</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="check2" id="check2">
+                <label class="form-check-label" for="check2">Opción 2</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="check3" id="check3">
+                <label class="form-check-label" for="check3">Opción 3</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="radio1" id="opc1" value="a">
+                <label class="form-check-label" for="opc1">Opción A</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="radio1" id="opc2" value="b">
+                <label class="form-check-label" for="opc2">Opción B</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="radio1" id="opc3" value="c">
+                <label class="form-check-label" for="opc3">Opción C</label>
+            </div>
+        </form>
+        <form class="my-5">
+            <h4>Sin salto de línea</h4>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" name="check4" id="check4">
+                <label class="form-check-label" for="check4">Opción 4</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" name="check5" id="check5">
+                <label class="form-check-label" for="check5">Opción 5</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" name="check6" id="check6">
+                <label class="form-check-label" for="check6">Opción 6</label>
+            </div>
+            <br>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="radio2" id="opc4" value="a">
+                <label class="form-check-label" for="opc4">Opción D</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="radio2" id="opc5" value="b">
+                <label class="form-check-label" for="opc5">Opción E</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" name="radio2" id="opc6" value="c">
+                <label class="form-check-label" for="opc6">Opción F</label>
+            </div>
+        </form>
+        <form class="my-5">
+            <h4>Checkbox con forma de interruptor</h4>
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" name="check7" id="check7">
+                <label class="form-check-label" for="check7">Opción 7</label>
+            </div>
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" name="check8" id="check8">
+                <label class="form-check-label" for="check8">Opción 8</label>
+            </div>
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" name="check9" id="check9">
+                <label class="form-check-label" for="check9">Opción 9</label>
+            </div>
+        </form>
+
+        <div style="margin-top: 3em;">
+            <a href="./" class="volver">← Volver</a>
+        </div>
+    </div>
+
+</body>
+</html>

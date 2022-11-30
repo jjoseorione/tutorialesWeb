@@ -1,0 +1,29 @@
+<!--
+    En caso que necesitemos agregar un nodo entre varios que se encuentran en el mismo nivel, el método appendChild no nos servirá. Para estos casos tenemos el método insertBefore que inserta un nodo previo a otro que le pasamos como referencia en el segundo parámetro. Los parámetros son el nodo nuevo a insertar y la referencia del hermano que quedará después del nodo nuevo.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body style="font-family: sans-serif;">
+    <div id="parrafos">
+        <p>Este es el primer párrafo</p>
+        <p>Este es el segundo párrafo</p>
+        <p id="p3">Este es el tercer párrafo</p>
+        <p>Este es el cuarto párrafo</p>
+        <p>Este es el quinto párrafo</p>
+
+    </div>
+
+    <input type="button" value="Insertar párrafo antes del tercero" onclick="insertarParrafo();">
+
+    <div style="margin-top: 3em;"><a href="../">Volver</a></div>
+
+    
+    <script src="funciones.js"></script>
+</body>
+</html>
