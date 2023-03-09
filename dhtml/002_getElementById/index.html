@@ -12,12 +12,12 @@ Para disponer un ejemplo muy sencillo dispondremos un elemento <h1> en la págin
     <title></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="estilos.css">
+    <script src="funciones.js"></script>
 </head>
 <body style="font-family: sans-serif;">
     <h1 id="titulo">Este es un título dinámico</h1>
-    <input type="button" value="Cambiar Color" onclick="cambiarColor();">
-    <input type="button" value="Cambiar Tamaño de Fuente" onclick="cambiarTamanoFuente()">
-    <script src="funciones.js"></script>
+    <input type="button" value="Cambiar Color" id="boton1" onclick="cambiarColor();">
+    <input type="button" value="Cambiar Tamaño de Fuente" id="boton2" onclick="cambiarTamanoFuente()">
 
     <div style="margin-top: 3em;"><a href="../">Volver</a></div>
 </body>
