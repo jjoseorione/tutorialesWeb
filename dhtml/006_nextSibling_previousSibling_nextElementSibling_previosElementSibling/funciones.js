@@ -1,11 +1,7 @@
-function todosLosParrafos(){
-	let parrafo = document.getElementById('parrafo1');
-	while(parrafo != null){
-		if(parrafo.nodeType == Node.ELEMENT_NODE)
-			alert("Nodo tipo Elemento. Contenido: " + parrafo.childNodes[0].nodeValue);
-		else
-			alert("Nodo tipo texto. Contenido: " + parrafo.nodeValue);
-		parrafo = parrafo.nextSibling;
+function arbol(id){
+	let padre = document.getElementById(id).parentNode;
+	for(let i=0; i<padre.childNodes.length; i++){
+		identificaTipoHijo(padre.childNodes[i])
 	}
 }
 
@@ -37,4 +33,16 @@ function anteriorElementoHermano(){
 	alert("Nodo actual: Segundo párrafo");
 	let aeh = document.getElementById('parrafo2').previousElementSibling;
 	alert("Anterior elemento. Contenido: " + aeh.childNodes[0].nodeValue);
+}
+
+function identificaTipoHijo(hijo){
+	if(hijo.nodeType == Node.ELEMENT_NODE)
+		alert("Nodo anterior de tipo elemento. Contenido: " + hijo.childNodes[0].nodeValue);
+	else{
+		let contenido = hijo.nodeValue.split(" ");
+		for(let i = 0; i < contenido.length; i++){
+
+		}
+		alert("Nodo anterior de tipo texto. Contenido: " + hijo.childNodes[0].nodeValue);
+	}
 }

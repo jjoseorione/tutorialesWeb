@@ -13,11 +13,11 @@
 </head>
 <body style="font-family: sans-serif;">
     <div>
-        <p id="parrafo1">Éste es el primer párrafo</p>
-        <p id="parrafo2">Éste es el segundo párrafo</p>
-        <p>Éste es el tercer párrafo</p>
+        <p>Párrafo anterior</p>
+        <p id="actual">Párrafo actual</p>
+        <p>Párrafo siguiente</p>
     </div>
-    <input type="button" value="todos los párrafos" onclick="todosLosParrafos();">
+    <input type="button" value="Describir arbol completo" onclick="arbol('actual');">
     <input type="button" value="nextSibling" onclick="proximoNodoHermano();">
     <input type="button" value="previousSibling" onclick="anteriorNodoHermano();">
     <input type="button" value="nextElementSibling" onclick="proximoElementoHermano();">
