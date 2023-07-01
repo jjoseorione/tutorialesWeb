@@ -1,0 +1,40 @@
+code{
+    font-size: 1.2em;
+    color: #aaa;
+    background-color: #008;
+}
+body{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    background-color: #222;
+    color: #ddd;
+    padding: 0 5em;
+}
+pre{
+    font-size: 1.2em;
+    color: #aaa;
+    background-color: #008;
+    padding: 2px 4px;
+    white-space: pre;
+    overflow-x: auto;
+}
+a{
+    color: #48F;
+    text-decoration: none;
+    font-weight: bold;
+}
+a.button{
+    background-color: #48F;
+    color: #222;
+    padding: 0.5em;
+    margin: 2em 0;
+    border: 1px solid #aaa;
+}
+a.button:hover{
+    background-color: #222;
+    color: #48F;
+}
+blockquote{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
