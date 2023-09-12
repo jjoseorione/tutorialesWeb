@@ -3,10 +3,23 @@
 <head>
     <link rel="stylesheet" href="../styles.css">
     <meta charset='utf-8'>
-    <title></title>
+    <title>Método html</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
+    <h1>Métodos html() y html(valor)</h1>
+    <p>
+        El método <code>html("bloque_html")</code> nos permite agregar un bloque de código HTML a partir de un elemento de la página.
+    </p>
+    <p>
+        Por otro lado, el método <code>html()</code> retorna el bloque de HTML contenido por elemento que llama el método.
+    </p>
+    <p>
+        De manera simple, puede verse que ambos tienen relación con la propiedad innerHTML del DOM, ya que el primer método modifica esta propiedad y el segundo obtiene su valor.
+    </p>
+    <p>
+        <strong>Problema: </strong> Crear una página que contenga un botón que al ser presionado muestre un formulario y que al presionar otro, el formulario se elimine. Utilizar las funciones html() y html(valor).
+    </p>
     
     <h3>pagina1.html</h3>
     <blockquote>

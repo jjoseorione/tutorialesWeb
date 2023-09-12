@@ -3,10 +3,17 @@
 <head>
     <link rel="stylesheet" href="../styles.css">
     <meta charset='utf-8'>
-    <title></title>
+    <title>Seleccionar por clase</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
+    <h1>Seleccionar por clase CSS definida</h1>
+    <p>
+        Recordemos que en CSS definimos clases cuando una regla de estilo puede ser igual para un conjunto de marcas HTML. Es posible acceder a todos los elementos de una clase con la función JQuery.
+    </p>
+    <p>
+        <strong>Ejemplo:</strong> Mostrar una serie de lenguajes de programación y aplicar un estilo resaltado para aquellos lenguajes que son orientados a objetos. Cuando se presione un botón, agregar la propiedad <em>background-color</em> a todos los elementos de dicha clase.
+    </p>
     
     <h3>pagina1.html</h3>
     <blockquote>
@@ -33,6 +40,10 @@
             fclose($code);
         ?></pre>
     </blockquote>
+
+    <p>
+        La línea de interés para este ejemplo es <code>jQuery(".resaltado").css("background-color", "dodgerblue");</code>, ya que aquí creamos un objeto jQuery que referencía a todos los elementos con la clase "resaltado". De esta manera, podemos cambiar la propiedad <em>background-color</em> de todos los elementos de dicha clase.
+    </p>
 
     <div style="margin: 3em 0;"><a href="../" class="button">Volver</a></div>
 </body>

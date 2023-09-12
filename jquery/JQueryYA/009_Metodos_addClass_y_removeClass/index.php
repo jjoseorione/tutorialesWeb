@@ -3,10 +3,17 @@
 <head>
     <link rel="stylesheet" href="../styles.css">
     <meta charset='utf-8'>
-    <title></title>
+    <title>Métodos addClass y removeClass</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
+    <h1>Métodos addClass y removeClass</h1>
+    <p>
+        Los métodos addClass y removeClass nos permiten asociar y desasociar una clase a un elemento o conjunto de elementos HTML.
+    </p>
+    <p>
+        <strong>Problema:</strong> Disponer un div con un conjunto de párrafos. Cuando se presione un botón, asociarle una clase y cuando se presione nuevamente, desasociarlo de dicha clase.
+    </p>
     
     <h3>pagina1.html</h3>
     <blockquote>

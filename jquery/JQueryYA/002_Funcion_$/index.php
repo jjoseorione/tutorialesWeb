@@ -138,7 +138,7 @@
     </p>
 
     <p>
-        Nota importante, actualmente también puede utilizarse la funnción <em>jquery</em> como equivalente a $. Por ejemplo, en lugar de realizar <code>let x = $(document);</code> puede realizarse <code>let x = Jquery(document);
+        Nota importante, actualmente también puede utilizarse la funnción <em>jQuery</em> como equivalente a $. Por ejemplo, en lugar de realizar <code>let x = $(document);</code> puede realizarse <code>let x = jQuery(document);</code>. En adelante se alternarán ambas formas para acostumbrarse a ambas.
 </code>
 </code>
     </p>
